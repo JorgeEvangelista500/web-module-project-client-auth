@@ -12,10 +12,11 @@ const Login = () => {
     })
 
     const handleChange = e => {
-        setCredentials({...state, [e.target.name]: e.target.value })
+        setCredentials({...credentials, [e.target.name]: e.target.value })
     }
     return (
         <div>
+            <h1>LOGIN</h1>
             <form>
                 <input
                     type='text'
