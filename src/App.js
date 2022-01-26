@@ -11,20 +11,13 @@ function App() {
   return (
   <Router>
     <div className="App">
-      <ul>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to='/friends'>FRIEND LIST</Link>
-        </li>
-        <li>
-          <Link to='/friends/add' >ADD FRIEND</Link>
-        </li>
-        <li>
-          <Link to='/logout'>Log out</Link>
-        </li>
-      </ul>
+      <h1>FRIEND DATABASE</h1>
+      <header>      
+          <Link className='links' to="/login">LOGIN</Link>          
+          <Link className='links' to='/friends'>FRIEND LIST</Link>
+          <Link className='links' to='/friends/add' >ADD FRIEND</Link>
+          <Link className='links' to='/logout'>LOGOUT</Link>
+      </header>
       <Switch>
         <Route path='/logout' component={Logout} />
         <PrivateRoute exact path='/friends/add' component={AddFriends} />

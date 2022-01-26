@@ -33,12 +33,14 @@ const Login = () => {
         <div>
             <h1>LOGIN</h1>
             <form onSubmit={login}>
+                <label>Username</label>
                 <input
                     type='text'
                     name='username'
                     value={credentials.username}
                     onChange={handleChange}
                 />
+                <label>Password</label>
                 <input
                     type='password'
                     name='password'

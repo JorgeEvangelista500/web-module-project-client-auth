@@ -23,12 +23,14 @@ const AddFriend = () => {
         <div>
             <h1>ADD FRIEND</h1>
             <form onSubmit={submit}>
+                <label>Friend Name</label>
                 <input
                     type='text'
                     name='name'
                     value={values.name}
                     onChange={handleChanges}
                 />
+                <label>Friend Email</label>
                 <input
                     type='text'
                     name='email'
