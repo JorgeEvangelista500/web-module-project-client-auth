@@ -19,10 +19,12 @@ const FriendList = () => {
     }, [])
     
     return (
-        <div> 
-            {friends.map(friend =>{
-                return(`-${friend.name}-${friend.email}`)
-            })}
+        <div>
+            <ul>
+           {friends.map(friend =>{
+                return(<li>-${friend.name}-${friend.email}</li>)
+            })}  
+            </ul>
         </div>
     )
 }
